@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anabia Global Employment Services | Pakistan - KSA - Gulf</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Dynamic Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Top Contact Strip -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <span><i class="fa-solid fa-phone"></i>0335 6611151</span>
+                <span><i class="fa-solid fa-envelope"></i>hr@anabiaglobal.com</span>
+                <span class="lic-tag"><i class="fa-solid fa-certificate"></i> License: OP&HRD/5259/RWP/2026</span>
+            </div>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/anabiaglobalofficial?igsh=MWttMWhkb2tjMGJ1dg%3D%3D&utm_source=qr" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#" class="spa-trigger" data-target="home-view">
+                    <span class="logo-bold">ANABIA GLOBAL</span><span class="logo-light"></span>
+                </a>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="spa-trigger active" data-target="home-view">Home</a></li>
+                    <li><a href="#" class="spa-trigger" data-target="about-view">About & Staff</a></li>
+                    <li><a href="#" class="spa-trigger" data-target="bulk-view">Bulk Sourcing</a></li>
+                    <li><a href="#" class="spa-trigger" data-target="docs-view">Documents & Process</a></li>
+                    <li><a href="#" class="spa-trigger" data-target="delegates-view">Client Visits</a></li>
+                    <li><a href="#" class="spa-trigger" data-target="jobs-view">Overseas Jobs</a></li>
+                    <li><a href="#" class="btn-nav spa-trigger" data-target="contact-view">Apply Now</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- VIEWS CONTAINER -->
+    <main id="app-viewport">
+
+        <!-- 1. HOME VIEW -->
+        <section id="home-view" class="spa-view active">
+            
+            <!-- HERO SECTION -->
+            <div class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-text-card">
+                        <span class="badge"><i class="fa-solid fa-circle-check"></i> Musaned Approved Agency</span>
+                        <h1 class="gradient-text">Unleashing Pakistan's Human Potential</h1>
+                        <p>Anabia Global Employment Services connects elite international enterprises across Saudi Arabia, UAE, and Europe with highly skilled, dependable Pakistani talent. Authorized under License OP&HRD/5259/RWP/2026.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn btn-primary spa-trigger" data-target="jobs-view">View Job Openings</a>
+                            <a href="#" class="btn btn-secondary spa-trigger" data-target="contact-view">Submit Vacancy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOP 3 BIG RUNNING DEMANDS -->
+            <div class="container page-padding">
+                <div class="section-header centered">
+                    <span class="cyber-badge">Live Pipelines</span>
+                    <h2 class="gradient-text">Top 3 Active Sourcing Demands</h2>
+                    <p class="section-subtitle">Urgent large-scale manpower slots open for immediate deployment. Apply today for priority vetting.</p>
+                </div>
+                
+                <div class="info-grid">
+                    <!-- Demand 1 -->
+                    <div class="info-card glow-card">
+                        <div class="demand-tag">Active 500+ Openings</div>
+                        <i class="fa-solid fa-helmet-safety text-gradient"></i>
+                        <h3>Civil & Structural Construction Crew</h3>
+                        <p><strong>Location:</strong> Riyadh, KSA (Aramco Project Pipeline)</p>
+                        <p><strong>Positions:</strong> Pipe Fitters, Scaffolders, Mason Supervisors, Riggers.</p>
+                        <div class="card-action-bar">
+                            <span class="verification-badge"><i class="fa-solid fa-shield"></i> Verified Demand No. 894/2026</span>
+                        </div>
+                    </div>
+                    <!-- Demand 2 -->
+                    <div class="info-card glow-card">
+                        <div class="demand-tag">Active 300+ Openings</div>
+                        <i class="fa-solid fa-truck-ramp-box text-gradient"></i>
+                        <h3>Delivery Riders & Fleet Drivers</h3>
+                        <p><strong>Location:</strong> Dubai & Abu Dhabi, UAE (Logistics giants)</p>
+                        <p><strong>Positions:</strong> Light Vehicle Drivers, Heavy Duty Fleet, Bike Riders.</p>
+                        <div class="card-action-bar">
+                            <span class="verification-badge"><i class="fa-solid fa-shield"></i> Verified Demand No. 902/2026</span>
+                        </div>
+                    </div>
+                    <!-- Demand 3 -->
+                    <div class="info-card glow-card">
+                        <div class="demand-tag">Active 150+ Openings</div>
+                        <i class="fa-solid fa-bolt text-gradient"></i>
+                        <h3>MEP Technicians & Electricians</h3>
+                        <p><strong>Location:</strong> Doha, Qatar & Kuwait</p>
+                        <p><strong>Positions:</strong> Industrial Electricians, HVAC Techs, Plumbing Supervisors.</p>
+                        <div class="card-action-bar">
+                            <span class="verification-badge"><i class="fa-solid fa-shield"></i> Verified Demand No. 711/2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home Info Boxes -->
+            <div class="home-services-intro container">
+                <div class="section-header centered">
+                    <span class="section-tag">Key Focus</span>
+                    <h2>End-To-End Sourcing & Support</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card glow-card">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <h3>Global Mobility</h3>
+                        <p>We manage flight details, documentation, and medical checks directly.</p>
+                    </div>
+                    <div class="info-card glow-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Compliant & Clear</h3>
+                        <p>No hidden fees, fully compliant with Ministry of Overseas Pakistanis & Musaned guidelines.</p>
+                    </div>
+                    <div class="info-card glow-card">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h3>Trade Testing</h3>
+                        <p>Skill verification and technical test trials conducted in modern, local laboratories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT US, STAFF & PHYSICAL OFFICES VIEW -->
+        <section id="about-view" class="spa-view">
+            <div class="subpage-header">
+                <div class="container">
+                    <h1 class="gradient-text">Who We Are</h1>
+                    <p>Bringing standard excellence to international HR solutions under license OP&HRD/5259/RWP/2026.</p>
+                </div>
+            </div>
+            
+            <div class="container page-padding">
+                <div class="about-detail-grid">
+                    <div class="text-content">
+                        <h2>CEO's Commitment to Quality</h2>
+                        <blockquote>
+                            "Anabia Global has been at the forefront of the recruitment industry in Pakistan. We don’t just fill openings—we cultivate human relationships built on integrity, global standards, and verified compliance via channels like Musaned."
+                        </blockquote>
+                        <p>We are registered members of the Pakistan Overseas Employment Promoters Association (POEPA) and approved by the Bureau of Emigration & Overseas Employment. Our selection channels guarantee that candidates match your core workflow immediately upon landing.</p>
+                    </div>
+                    <div class="compliance-box glow-card">
+                        <h3>Our Core Policies</h3>
+                        <div class="policy-accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">AHTMS Prohibition Policy <i class="fa-solid fa-chevron-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>We enforce a strict zero-tolerance code against Human Trafficking and Exploitative labor, aligning carefully with global humanitarian labor acts.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">CSER Policy Statement <i class="fa-solid fa-chevron-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>Our Corporate Social Responsibility ensures a portion of our earnings funds vocational skill centers in remote regions of Pakistan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW: PHYSICAL OFFICE TOUR & INFRASTRUCTURE PHOTOS -->
+                <div class="office-photos-section">
+                    <div class="section-header">
+                        <span class="cyber-badge">State-Of-The-Art Workspace</span>
+                        <h2 class="gradient-text">Our Physical HQ & Evaluation Labs</h2>
+                        <p class="section-subtitle">Take a digital walk through our executive cabins, interview rooms, and testing environments.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Slideshow / Gallery Section Container -->
+            <div class="gallery-slider-section" style="margin-top: 3rem; text-align: center;">
+                
+                <!-- Slideshow Wrapper -->
+                <div class="slideshow-container" style="position: relative; max-width: 800px; margin: auto; overflow: hidden; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(13, 17, 33, 0.4); box-shadow: 0 0 30px rgba(0, 242, 254, 0.15);">
+
+                    <!-- Slide 1 -->
+                    <div class="mySlides fade" style="display: block;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">1 / 10</div>
+                        <img src="Certificates/1.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">2 / 10</div>
+                        <img src="Certificates/2.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">3 / 10</div>
+                        <img src="Certificates/3.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">4 / 10</div>
+                        <img src="Certificates/4.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">5 / 10</div>
+                        <img src="Certificates/5.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">6 / 10</div>
+                        <img src="Certificates/6.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">7 / 10</div>
+                        <img src="Certificates/7.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">8 / 10</div>
+                        <img src="Certificates/8.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">9 / 10</div>
+                        <img src="Certificates/9.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext" style="color: #9ca3af; font-size: 0.8rem; position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 8px; border-radius: 4px;">10 / 10</div>
+                        <img src="Certificates/10.jpeg" alt="Official Certificate / Demand" style="width: 100%; max-height: 550px; object-fit: contain; padding: 1.5rem; background: transparent;">
+                        <div class="slide-caption" style="color: #f3f4f6; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; background: rgba(13, 17, 33, 0.85); padding: 12px; border-top: 1px solid rgba(255, 255, 255, 0.05);">Official Agency Document</div>
+                    </div>
+
+
+
+                    <!-- Navigation Arrows -->
+                    <a class="prev" onclick="plusSlides(-1)" style="cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); left: 10px; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background: rgba(13, 17, 33, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 50%; color: #00f2fe; font-weight: bold; font-size: 18px; transition: 0.3s; user-select: none;">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)" style="cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); right: 10px; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background: rgba(13, 17, 33, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 50%; color: #00f2fe; font-weight: bold; font-size: 18px; transition: 0.3s; user-select: none;">&#10095;</a>
+                </div>
+
+                <!-- Indicator Dots -->
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <span class="dot active" onclick="currentSlide(1)" style="cursor: pointer; height: 10px; width: 10px; margin: 0 4px; background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;"></span>
+                    <span class="dot" onclick="currentSlide(2)" style="cursor: pointer; height: 10px; width: 10px; margin: 0 4px; background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;"></span>
+                    <span class="dot" onclick="currentSlide(3)" style="cursor: pointer; height: 10px; width: 10px; margin: 0 4px; background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;"></span>
+                    <span class="dot" onclick="currentSlide(4)" style="cursor: pointer; height: 10px; width: 10px; margin: 0 4px; background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;"></span>
+                    <span class="dot" onclick="currentSlide(5)" style="cursor: pointer; height: 10px; width: 10px; margin: 0 4px; background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;"></span>
+                </div>
+            </div>
+
+            <!-- EXECUTIVE LEADERSHIP & STAFF PROFILE SECTION -->
+            <section class="leadership-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="cyber-badge">Core Board</span>
+                        <h2 class="section-title gradient-text">Our Executive Leadership & Staff</h2>
+                        <p class="section-subtitle">Guiding global recruitment pipelines with integrity, innovation, and direct cross-border oversight.</p>
+                    </div>
+                    
+                    <div class="leadership-container">
+                        <!-- Row 1: CEO -->
+                        <div class="leader-row">
+                            <div class="leader-image-panel">
+                                <img src="ceo.jpeg" alt="Malik Imran - CEO" class="leader-pic">
+                                <div class="panel-glow"></div>
+                            </div>
+                            <div class="leader-info-panel">
+                                <div class="panel-header">
+                                    <span class="leader-tag">Founder & CEO</span>
+                                    <h3 class="leader-fullname">Malik Imran</h3>
+                                </div>
+                                <p class="leader-description">
+                                    With years of industry-leading expertise in global workforce mobilization, Malik Imran spearheads Anabia Global with a vision to empower Pakistan’s premium talent. Under his direction, the agency has established invaluable relationships with top-tier clients across the Middle East and Europe.
+                                </p>
+                                <div class="leader-meta">
+                                    <a href="mailto:ceo@anabiaglobal.com" class="leader-email">
+                                        <i class="fa-solid fa-envelope-open-text"></i> ceo@anabiaglobal.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 2: MD -->
+                        <div class="leader-row reverse">
+                            <div class="leader-image-panel">
+                                <img src="director.jpeg" alt="Natasha Imran - Managing Director" class="leader-pic">
+                                <div class="panel-glow"></div>
+                            </div>
+                            <div class="leader-info-panel">
+                                <div class="panel-header">
+                                    <span class="leader-tag">Managing Director</span>
+                                    <h3 class="leader-fullname">Natasha Imran</h3>
+                                </div>
+                                <p class="leader-description">
+                                    Overseeing our core operational frameworks, the Managing Director ensures that candidate vetting, technical compliance, and fast-track mobilization procedures meet international standards. Their execution guarantees seamless recruitment solutions for complex industrial contracts.
+                                </p>
+                                <div class="leader-meta">
+                                    <a href="mailto:md@anabiaglobal.com" class="leader-email">
+                                        <i class="fa-solid fa-envelope-open-text"></i> md@anabiaglobal.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Staff Profile 1 (Head of Recruitment) -->
+                        <div class="leader-row">
+                            <div class="leader-image-panel">
+                                <img src="imigrationOf.jpeg" alt="Muhammad Ali - Head of Recruitment" class="leader-pic">
+                                <div class="panel-glow"></div>
+                            </div>
+                            <div class="leader-info-panel">
+                                <div class="panel-header">
+                                    <span class="leader-tag">Immigration processing officer</span>
+                                    <h3 class="leader-fullname">Shahzaib Saleem</h3>
+                                </div>
+                                <p class="leader-description">
+                                    Directly managing the candidate sourcing, screening, and database processing units. Ali coordinates directly with trade testing labs to ensure technical candidate pools match clients' project needs without compromises.
+                                </p>
+                                <div class="leader-meta">
+                                    <span class="leader-email"><i class="fa-solid fa-user-check"></i> Head of Recruitment & Trade Testing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- assistant -->
+                        <div class="leader-row reverse">
+                                <div class="leader-image-panel">
+                                    <img src="assist.jpeg" alt="Malik Imran - CEO" class="leader-pic">
+                                    <div class="panel-glow"></div>
+                                </div>
+                                <div class="leader-info-panel">
+                                    <div class="panel-header">
+                                        <span class="leader-tag">Recruitment coordinator</span>
+                                        <h3 class="leader-fullname">Sania Khan</h3>
+                                    </div>
+                                    <p class="leader-description">
+                                       Orchestrates our high-volume sourcing pipelines and structures candidate screening protocols. By coordinating directly with visiting overseas delegations, they ensure precise, legally compliant placements for international industries.
+                                    </p>
+                                       <div class="leader-meta">
+                                        <span class="leader-email"><i class="fa-solid fa-user-check">Recruitment coordinator</i> </span>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        
+                        <!-- IT -->
+                        <div class="leader-row">
+                            <div class="leader-image-panel">
+                                <img src="it.jpeg" alt="Malik Imran - CEO" class="leader-pic">
+                                <div class="panel-glow"></div>
+                            </div>
+                            <div class="leader-info-panel">
+                                <div class="panel-header">
+                                    <span class="leader-tag">Head of IT and Digital Operations</span>
+                                    <h3 class="leader-fullname">Muhammad Soban</h3>
+                                </div>
+                                <p class="leader-description">
+                                    Spearheads our technical frameworks, safeguarding candidate records with advanced encryption. They administer our custom portal databases, ensuring secure document uploads and 24/7 processing updates.
+                                </p>
+                               <div class="leader-meta">
+                                        <span class="leader-email"><i class="fa-solid fa-user-check">Head of IT and Digital Operations</i> </span>
+                                    </div>
+                            </div>
+                        </div>
+                        
+
+
+                         <!--RECR OFFICER-->
+                        <div class="leader-row">
+                            <div class="leader-image-panel">
+                                <img src="recrOF.jpeg" alt="Malik Imran - CEO" class="leader-pic">
+                                <div class="panel-glow"></div>
+                            </div>
+                            <div class="leader-info-panel">
+                                <div class="panel-header">
+                                    <span class="leader-tag">Recruitment Operations Manager</span>
+                                    <h3 class="leader-fullname">Nuvaira Hussain</h3>
+                                </div>
+                                <p class="leader-description">
+                                    Directs the day-to-day lifecycle of active recruitment projects, ensuring smooth document vetting, visa processing speed, and mobilization timelines. They bridge the gap between back-office compliance and front-line coordinators to deliver rapid, hassle-free candidate deployments.
+                                </p>
+                               <div class="leader-meta">
+                                        <span class="leader-email"><i class="fa-solid fa-user-check">Recruitment Operations Manager</i> </span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- 3. BULK RECRUITMENT SERVICES VIEW -->
+        <section id="bulk-view" class="spa-view">
+            <div class="subpage-header">
+                <div class="container">
+                    <h1 class="gradient-text">Bulk Mass Sourcing Services</h1>
+                    <p>Supplying massive, skilled, and construction manpower setups at short notice.</p>
+                </div>
+            </div>
+
+            <div class="container page-padding">
+                <div class="bulk-benefits-grid">
+                    <div class="bulk-text-wrap">
+                        <h2>Why Choose Anabia Global for Bulk Operations?</h2>
+                        <p>If you're launching massive commercial, infrastructure, or construction developments, you need a partner who can mobilize thousands of technicians seamlessly.</p>
+                        
+                        <div class="features-columns">
+                            <div class="benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h4>Modern Testing Centers</h4>
+                                    <p>We operate advanced electrical, mechanical, and civil testing yards to qualify labor before visa execution.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h4>Comprehensive Sourcing Base</h4>
+                                    <p>A digitized candidate pool spanning Rawalpindi, Lahore, Peshawar, Karachi, and rural craft hubs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bulk-image-wrap">
+                        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTeYZAFyqWMuGvuGRvLAL_gu_MnwoZZICrUpPTZIhYdQXGRY_tFE2Ee2Q26al40Wk5RsTP4fMLhqOooACo" alt="Onsite construction workforce" class="glowing-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. NEW PAGE: REQUIRED DOCUMENTS & PROCESSING GUIDE -->
+        <section id="docs-view" class="spa-view">
+            <!-- Subpage Header -->
+            <div class="subpage-header">
+                <div class="container">
+                    <span class="badge"><i class="fa-solid fa-file-shield"></i> Required Files</span>
+                    <h1 class="gradient-text">What You Must Bring to Us</h1>
+                    <p>To proceed with your verification and visa application, please bring the following original physical documents to our office:</p>
+                </div>
+            </div>
+
+            <div class="container page-padding">
+
+
+
+                <!-- Separately Made Div Containing Image List Content Exactly As Written -->
+                <div class="needed-items-checklist glow-card" style="margin-top: 3rem; padding: 2.5rem 2rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(13, 17, 33, 0.4); text-align: left;">
+                    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #f3f4f6; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fa-solid fa-list-check" style="color: #00f2fe;"></i> Required Items Checklist
+                    </h3>
+                    <ul style="color: #9ca3af; font-size: 0.95rem; line-height: 2; padding-left: 1.2rem; list-style-type: disc;">
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">OFFICE PHOTOS</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">STAFF FULL DATA PICS PROFILES AND ALL</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">DEMAND LETTERS</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">COMPANIES LOGOS WORK WITH</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">ADDRESS GOOGLE MAP</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">SOCIAL MEDIA LINKS LIKE FACEBOOK , TITKOK , INSTAGRAM</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">TOP 3 BIG DEMANDS THAT ARE STILL RUNNING</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">ALL COMPANIES NAMES</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">IDEA OF APPLY FORM</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">3 TO 4 PHONE NUMBERS</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">2 TO 3 MAILS</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">NEED ALL DOCUMENTS IN HD FORM CLEAR 4K</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">NEED 1 MAIL FOR HELP SUPPORT SERVICES</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">DELEGATION PHOTOS</li>
+                        <li style="margin-bottom: 0.5rem; font-weight: 600; color: #e5e7eb;">4 TO 5 ANY COMPANY OWNERS PHOTOS WHOM WE ARE WORKING WITH</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. DELEGATE HOSTING & CLIENT VISITS VIEW -->
+        <section id="delegates-view" class="spa-view">
+            <div class="subpage-header">
+                <div class="container">
+                    <span class="badge"><i class="fa-solid fa-handshake"></i> Foreign Delegations</span>
+                    <h1 class="gradient-text">Delegate Hosting & Client Visits</h1>
+                    <p>Providing premium hospitality, logistical support, and cutting-edge testing facilities for international employers.</p>
+                </div>
+            </div>
+            
+            <div class="container page-padding">
+                <div class="section-header">
+                    <span class="cyber-badge">Our Process</span>
+                    <h2 class="section-title gradient-text">Turnkey Delegation Management</h2>
+                    <p class="section-subtitle">We manage direct employer-to-candidate recruitment drives from the runway to the final selection board.</p>
+                </div>
+                
+                <div class="leadership-container">
+                    
+                    <!-- Row 1: Executive Office Meetings -->
+                    <div class="leader-row">
+                        <div class="leader-image-panel">
+                            <img src="delegate-meeting.jpg" alt="Bilateral Sourcing Discussion" class="leader-pic">
+                            <div class="panel-glow"></div>
+                        </div>
+                        <div class="leader-info-panel">
+                            <div class="panel-header">
+                                <span class="leader-tag">Strategic Planning</span>
+                                <h3 class="leader-fullname">Executive Client Consultations</h3>
+                            </div>
+                            <p class="leader-description">
+                                We host foreign delegation panels directly inside our Rawalpindi headquarters. Our executive team coordinates project timelines, skill frameworks, and documentation workflows face-to-face with visiting employers to ensure flawless, rapid mobilization.
+                            </p>
+                            <div class="leader-meta">
+                                <span class="leader-email"><i class="fa-solid fa-building"></i> Rawalpindi HQ Boardroom</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Airport Welcome Group -->
+                    <div class="leader-row reverse">
+                        <div class="leader-image-panel">
+                            <img src="delegate-arrival-group.jpg" alt="Gulf Delegation Welcome" class="leader-pic">
+                            <div class="panel-glow"></div>
+                        </div>
+                        <div class="leader-info-panel">
+                            <div class="panel-header">
+                                <span class="leader-tag">VIP Protocol</span>
+                                <h3 class="leader-fullname">Warm Airport Receptions</h3>
+                            </div>
+                            <p class="leader-description">
+                                We believe that trust begins the moment our clients land. Our administrative and operations teams provide dedicated airport protocols, comfortable transfers, and high-standard secure logistics for multi-member technical panels arriving from the Gulf.
+                            </p>
+                            <div class="leader-meta">
+                                <span class="leader-email"><i class="fa-solid fa-plane-arrival"></i> Islamabad International Airport</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Live Interviews -->
+                    <div class="leader-row">
+                        <div class="leader-image-panel">
+                            <img src="delegate-interviews.jpg" alt="Direct Candidate Evaluations" class="leader-pic">
+                            <div class="panel-glow"></div>
+                        </div>
+                        <div class="leader-info-panel">
+                            <div class="panel-header">
+                                <span class="leader-tag">Vetting & Selection</span>
+                                <h3 class="leader-fullname">Direct Candidate Evaluations</h3>
+                            </div>
+                            <p class="leader-description">
+                                Visiting delegates can evaluate and interview prospective workers in our executive, fully equipped private cabins. This hands-on assessment ensures that selected technicians strictly match complex industrial project specifications before visa execution.
+                            </p>
+                            <div class="leader-meta">
+                                <span class="leader-email"><i class="fa-solid fa-square-poll-horizontal"></i> Direct Skill Matching</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: VIP Individual Arrival - Red Roses -->
+                    <div class="leader-row reverse">
+                        <div class="leader-image-panel">
+                            <img src="delegate-welcome-1.jpg" alt="Saudi Executive Welcoming" class="leader-pic">
+                            <div class="panel-glow"></div>
+                        </div>
+                        <div class="leader-info-panel">
+                            <div class="panel-header">
+                                <span class="leader-tag">Client Care</span>
+                                <h3 class="leader-fullname">Saudi Arabia Sourcing Milestones</h3>
+                            </div>
+                            <p class="leader-description">
+                                Our close ties with major corporate employers across Saudi Arabia allow us to execute large-scale, high-volume recruitment drives seamlessly. Every partner is greeted with complete hospitality and a custom-tailored operational plan.
+                            </p>
+                            <div class="leader-meta">
+                                <span class="leader-email"><i class="fa-solid fa-mosque"></i> Saudi Recruitment Pipeline</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: VIP Blue Cap Arrival - Blue Flowers -->
+                    <div class="leader-row">
+                        <div class="leader-image-panel">
+                            <img src="delegate-welcome-2.jpg" alt="International Recruiter Reception" class="leader-pic">
+                            <div class="panel-glow"></div>
+                        </div>
+                        <div class="leader-info-panel">
+                            <div class="panel-header">
+                                <span class="leader-tag">Global Mobility</span>
+                                <h3 class="leader-fullname">Continuous Project Monitoring</h3>
+                            </div>
+                            <p class="leader-description">
+                                From project initiation to final deployment, we provide absolute visibility. Our clients are given full access to candidates' verified documents, trade test results, and medical reports to complete their mobilization with confidence.
+                            </p>
+                            <div class="leader-meta">
+                                <span class="leader-email"><i class="fa-solid fa-circle-check"></i> 100% Compliant Procedures</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- NEW: CORPORATE CLIENT PORTRAITS & WORKING COMPANIES LIST -->
+                <div class="corporate-clients-section">
+                    <div class="section-header centered">
+                        <span class="cyber-badge">Corporate Alliance</span>
+                        <h2>Meet Our Associated Foreign Employers</h2>
+                        <p class="section-subtitle">We partner directly with leading industrial executives and operations managers across Saudi Arabia and the GCC.</p>
+                    </div>
+
+                    <!-- Grid of 4 to 5 International Client Owners / Executives we work with -->
+                    <div class="clients-profiles-grid">
+                        <div class="owner-card glow-card">
+                            <img src="client-owner-1.jpg" alt="Al-Shehri Engineering Executive" class="owner-pic">
+                            <div class="owner-info">
+                                <h4>Engr. Fahad Al-Otaibi</h4>
+                                <span class="comp-tag">Al-Otaibi Construction, Riyadh</span>
+                            </div>
+                        </div>
+                        <div class="owner-card glow-card">
+                            <img src="client-owner-2.jpg" alt="Dubai Fleet Logistics Manager" class="owner-pic">
+                            <div class="owner-info">
+                                <h4>Mr. Robert Vance</h4>
+                                <span class="comp-tag">Apex Logistics, Dubai</span>
+                            </div>
+                        </div>
+                        <div class="owner-card glow-card">
+                            <img src="client-owner-3.jpg" alt="Qatar Commercial Contracting MD" class="owner-pic">
+                            <div class="owner-info">
+                                <h4>Sheikh Hamad Al-Thani</h4>
+                                <span class="comp-tag">Al-Thani Contracting, Doha</span>
+                            </div>
+                        </div>
+                        <div class="owner-card glow-card">
+                            <img src="client-owner-4.jpg" alt="Kuwait Facilities Director" class="owner-pic">
+                            <div class="owner-info">
+                                <h4>Engr. Tariq Al-Gharabally</h4>
+                                <span class="comp-tag">Kuwaiti MEP Solutions, Kuwait City</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text list / grid of client companies we work with -->
+                    <div class="partner-logos-container">
+                        <h3>Trusted By Industry Leaders</h3>
+                        <div class="partner-logos-grid">
+                            <div class="partner-logo-item">Al-Yamama Group, KSA</div>
+                            <div class="partner-logo-item">Emaar Properties, UAE</div>
+                            <div class="partner-logo-item">Nesma & Partners, KSA</div>
+                            <div class="partner-logo-item">Sharaf DG, UAE</div>
+                            <div class="partner-logo-item">Kharafi National, Kuwait</div>
+                            <div class="partner-logo-item">Drake & Scull International</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. ACTIVE JOB OPENINGS VIEW -->
+        <section id="jobs-view" class="spa-view">
+            <div class="subpage-header">
+                <div class="container">
+                    <h1 class="gradient-text">Active Overseas Job Openings</h1>
+                    <p>Find real jobs abroad. Apply today and start your journey with the Anabia Global process.</p>
+                </div>
+            </div>
+
+            <div class="container page-padding">
+                <!-- Filter Bar -->
+                <div class="job-filter-bar glow-card">
+                    <input type="text" id="jobSearch" placeholder="Search title or keyword (e.g. Technician, Rider)...">
+                    <select id="countryFilter">
+                        <option value="all">All Countries</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Maldives">Maldives</option>
+                    </select>
+                </div>
+
+                <!-- Job Postings Render Target -->
+                <div class="jobs-list-container" id="jobsContainer">
+                    <!-- Dynamic Job Listings injected by app.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. GET IN TOUCH & INTERACTIVE APPLICATION FORM VIEW -->
+        <section id="contact-view" class="spa-view">
+            <div class="subpage-header">
+                <div class="container">
+                    <h1 class="gradient-text">Get In Touch</h1>
+                    <p>Reach our central offices, check physical locations, or submit a request directly.</p>
+                </div>
+            </div>
+
+            <div class="container page-padding">
+                <div class="contact-hub-grid">
+                    
+                    <!-- HIGH CONVERSION INTERACTIVE RESUME/APPLY FORM -->
+                    <div class="form-wrapper glow-card">
+                        <h2>Interactive Application & Inquiry</h2>
+                        <p class="form-subtext">Submit your credentials directly to our recruitment department. All uploaded resumes are automatically screened for active demands.</p>
+                        
+                        <form id="contactFormMain" class="interactive-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" id="formName" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input type="email" id="formEmail" required placeholder="john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label>Phone / WhatsApp Number</label>
+                                    <input type="tel" id="formPhone" required placeholder="+92 300 1234567">
+                                </div>
+                                <div class="form-group">
+                                    <label>Trade / Job Category</label>
+                                    <input type="text" id="formCategory" placeholder="e.g., HVAC Technician, Electrician">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Inquiry / Application Type</label>
+                                <select id="formType" required>
+                                    <option value="">Select Option</option>
+                                    <option value="Candidate">I want to apply for active running job demands</option>
+                                    <option value="Employer">I want to hire Pakistani manpower (Employer)</option>
+                                    <option value="Visa">I need support with Visa processing & certificates</option>
+                                </select>
+                            </div>
+
+                            <!-- Integrated File Upload Form Group -->
+                            <div class="form-group" id="fileUploadGroup">
+                                <label><i class="fa-solid fa-file-arrow-up"></i> Upload your Resume / CV (PDF or DOCX in HD Clear format)</label>
+                                <input type="file" id="formFile" accept=".pdf,.doc,.docx" required>
+                                <span class="input-helper">Keep text crisp and readable for automation parsing.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Your Cover Note / Sourcing Needs</label>
+                                <textarea id="formMessage" rows="4" required placeholder="Detail your experiences, qualifications, or hiring volume requirements..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit Profile & Documents <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Headquarters, Multi-Offices, Multi-Phone Numbers and Email Lists -->
+                    <!-- <div class="branch-map-box">
+                        <h2>Our Sourcing Hubs & Support Desks</h2>
+                        <div class="contacts-directory glow-card">
+                            <h3><i class="fa-solid fa-headset text-gradient"></i> Direct Phone Lines</h3>
+                            <ul class="dir-list">
+                                <li><strong>General Hotline:</strong> +92 51 111 348 721</li>
+                                <li><strong>Candidate Helpline:</strong> +92 51 8775 444</li>
+                                <li><strong>Employer Desk:</strong> +92 300 8507421</li>
+                                <li><strong>Saudi Desk Hotline:</strong> +966 546 119571</li>
+                            </ul>
+
+                            <h3 class="space-above"><i class="fa-solid fa-envelope-open-text text-gradient"></i> Official Mailboxes</h3>
+                            <ul class="dir-list">
+                                <li><strong>Corporate Sourcing:</strong> bdm@anabiaglobal.com</li>
+                                <li><strong>General Inquiries:</strong> info@anabiaglobal.com</li>
+                                <li><strong>Executive Board:</strong> ceo@anabiaglobal.com</li>
+                                <li class="help-box"><strong><i class="fa-solid fa-life-ring"></i> Help & Support Services:</strong> support@anabiaglobal.com</li>
+                            </ul>
+                        </div>
+                         -->
+                        <!-- <div class="branch-toggle-list">
+                            <div class="branch-item active glow-card" data-lat="33.6429" data-lng="73.0782">
+                                <h4><i class="fa-solid fa-location-dot"></i> Rawalpindi Head Office</h4>
+                                <p>Satellite Town, Block B, Rawalpindi, Pakistan</p>
+                            </div>
+                            <div class="branch-item glow-card" data-lat="24.7136" data-lng="46.6753">
+                                <h4><i class="fa-solid fa-location-dot"></i> Riyadh Regional Branch</h4>
+                                <p>Al Oliya Street, Riyadh, Saudi Arabia</p>
+                            </div>
+                        </div> -->
+
+                        <!-- Embedded Google Map targeting Rawalpindi Office
+                        <div class="map-placeholder glow-card">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.431054378877!2d73.0756006764353!3d33.642900073315694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9529dfb2ef7d%3A0xe8ffecbe12658e4e!2sSatellite%20Town%2C%20Rawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" 
+                                width="100%" 
+                                height="250" 
+                                style="border:0; border-radius:12px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid-bottom">
+            <div>
+                <h3>ANABIA GLOBAL</h3>
+                <p>Licensed by Ministry of Overseas Pakistanis & Human Resource Development. Governed under License OP&HRD/5259/RWP/2026.</p>
+                <div class="social-links-footer">
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Contact Core</h4>
+                <p>General Desk: info@anabiaglobal.com</p>
+                <p>Business Inquiries: bdm@anabiaglobal.com</p>
+                <p>Help & Support Desk: support@anabiaglobal.com</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 Anabia Global Employment Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
