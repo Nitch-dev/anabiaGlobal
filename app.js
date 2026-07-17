@@ -250,7 +250,7 @@ const contactFormMain = document.getElementById('contactFormMain');
             const rawMessage = document.getElementById('formMessage').value;
 
             // Target administrative mailbox
-            const recipientEmail = "info@anabiaglobal.co"; 
+            const recipientEmail = "hr@anabiaglobal.co"; 
             const emailSubject = `New ${type} Submission from ${name}`;
 
             // Build a structured, professional plain-text message layout
