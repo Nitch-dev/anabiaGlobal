@@ -117,7 +117,7 @@ body {
     font-family: var(--font-heading);
     font-weight: 900; /* Boosted from 700 to 900 for maximum thickness */
     color: var(--primary-glow);
-    font-size: 1.6rem; /* Slightly increased size for extra presence */
+    font-size: 2rem; /* Slightly increased size for extra presence */
     letter-spacing: 1.5px; /* Balanced spacing for ultra-bold text */
     text-shadow: 0 0 1px rgba(224, 169, 46, 0.3); /* Soft glow outline to increase thickness */
 }
@@ -126,7 +126,7 @@ body {
     font-family: var(--font-heading);
     font-weight: 300;
     color: var(--text-main);
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 5px;
 }
 

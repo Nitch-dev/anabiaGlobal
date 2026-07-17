@@ -1,11 +1,11 @@
 // Active Core State
 const jobDb = [
-    { id: 1, title: 'Traila Driver ', country: 'Saudi Arabia', type: 'Full-Time', site: 'On Site', desc: '' },
-    { id: 1, title: 'Ltv Driver ', country: 'Saudi Arabia', type: 'Full-Time', site: 'On Site', desc: '' },
-    { id: 1, title: 'Bus Driver ', country: 'Saudi Arabia', type: 'Full-Time', site: 'On Site', desc: '' },
-    { id: 1, title: 'Malysia Hotel Work ', country: 'Saudi Arabia', type: 'Full-Time', site: 'On Site', desc: '' },
-    { id: 1, title: 'Crane Operators  ', country: 'Saudi Arabia', type: 'Full-Time', site: 'On Site', desc: '' },
-    { id: 1, title: 'Civil Work ', country: 'Saudi Arabia', type: 'Full-Time', site: 'On Site', desc: '' },
+    { id: 1, title: 'Traila Driver ', country: 'Saudi Arabia, United Arab Emirates, Qatar, Kuwait, Oman, Bahrain', type: 'Full-Time', site: 'On Site', desc: '' },
+    { id: 1, title: 'Ltv Driver ', country: 'Saudi Arabia, United Arab Emirates, Qatar, Kuwait, Oman, Bahrain', type: 'Full-Time', site: 'On Site', desc: '' },
+    { id: 1, title: 'Bus Driver ', country: 'Saudi Arabia, United Arab Emirates, Qatar, Kuwait, Oman, Bahrain', type: 'Full-Time', site: 'On Site', desc: '' },
+    { id: 1, title: 'Malysia Hotel Work ', country: 'Saudi Arabia, United Arab Emirates, Qatar, Kuwait, Oman, Bahrain', type: 'Full-Time', site: 'On Site', desc: '' },
+    { id: 1, title: 'Crane Operators  ', country: 'Saudi Arabia, United Arab Emirates, Qatar, Kuwait, Oman, Bahrain', type: 'Full-Time', site: 'On Site', desc: '' },
+    { id: 1, title: 'Civil Work ', country: 'Saudi Arabia, United Arab Emirates, Qatar, Kuwait, Oman, Bahrain', type: 'Full-Time', site: 'On Site', desc: '' },
     
 ];
 
@@ -239,14 +239,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Submissions Handler mockup
-    const contactFormMain = document.getElementById('contactFormMain');
+const contactFormMain = document.getElementById('contactFormMain');
     if (contactFormMain) {
         contactFormMain.addEventListener('submit', (e) => {
             e.preventDefault();
-            const applicantName = document.getElementById('formName').value;
-            alert(`Inquiry received, ${applicantName}! Your data profile has been queued directly with the regional selection desk.`);
+
+            // Extract the form details manually from the DOM
+            const name = document.getElementById('formName').value;
+            const type = document.getElementById('formType').value;
+            const rawMessage = document.getElementById('formMessage').value;
+
+            // Target administrative mailbox
+            const recipientEmail = "info@anabiaglobal.co"; 
+            const emailSubject = `New ${type} Submission from ${name}`;
+
+            // Build a structured, professional plain-text message layout
+            const emailBody = `Dear Selection Desk,
+
+A new application/inquiry form has been submitted from the web portal.
+
+==================================================
+SUBMISSION DETAILS:
+==================================================
+Name: ${name}
+Profile Type: ${type}
+Message/Vacancy details:
+${rawMessage}
+==================================================
+
+Please process this profile and contact the candidate directly.
+
+Best regards,
+Anabia Global Portal Automated Dispatch Desk`;
+
+            // Format strings cleanly for a URL string (escapes spaces, line breaks, etc.)
+            const encodedSubject = encodeURIComponent(emailSubject);
+            const encodedBody = encodeURIComponent(emailBody);
+
+            // Construct standard mailto link layout
+            const mailtoUrl = `mailto:${recipientEmail}?subject=${encodedSubject}&body=${encodedBody}`;
+
+            // Open the client's local system mail app instantly
+            window.location.href = mailtoUrl;
+
+            // Optional: Reset form fields locally
             contactFormMain.reset();
-            fileUploadGroup.style.display = 'none';
+            if (fileUploadGroup) fileUploadGroup.style.display = 'none';
         });
     }
 });
