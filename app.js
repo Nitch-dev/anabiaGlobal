@@ -247,6 +247,9 @@ const contactFormMain = document.getElementById('contactFormMain');
             // Extract the form details manually from the DOM
             const name = document.getElementById('formName').value;
             const type = document.getElementById('formType').value;
+            const email = document.getElementById('formEmail').value;
+            const phone = document.getElementById('formPhone').value;
+            
             const rawMessage = document.getElementById('formMessage').value;
 
             // Target administrative mailbox
@@ -262,6 +265,8 @@ A new application/inquiry form has been submitted from the web portal.
 SUBMISSION DETAILS:
 ==================================================
 Name: ${name}
+Email: ${email}
+Phone: ${phone}
 Profile Type: ${type}
 Message/Vacancy details:
 ${rawMessage}
